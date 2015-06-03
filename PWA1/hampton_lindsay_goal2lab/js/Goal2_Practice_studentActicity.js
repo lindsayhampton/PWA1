@@ -12,7 +12,9 @@ var abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 
 //code goes here
 
+console.log(str1.substr(7,10));
 
+console.log(str1.concat(str2));
 
 /*******************************************
 STUDENT ACTIVITY 2:
@@ -21,6 +23,7 @@ STUDENT ACTIVITY 2:
 1.  Use substring() to console.log 'JavaScript' from str2.
 ********************************************/
 
+console.log(str2.substr(0,10));
 
 //code goes here
 
@@ -35,6 +38,9 @@ STUDENT ACTIVITY 3:
 ********************************************/
 
 
+console.log(str1.toLowerCase());
+console.log(str1.toUpperCase());
+
 //code goes here
 
 
@@ -48,6 +54,10 @@ STUDENT ACTIVITY 4:
 
 var num = 4567896;
 var dec = 33.123456;
+
+console.log(dec.toExponential());
+console.log(dec.toString());
+
 
 //code goes here
 
@@ -73,11 +83,20 @@ var dec = 33.123456;
     var secondQtr = ["Apr", "May", "Jun"];
     var secondHalfYr = ["Jul", "Aug", "Sept", "Oct", "Nov", "Dec"];
  
-
+var combined = firstQtr.concat(secondQtr);
+console.log(combined);
+combined = combined.concat(secondHalfYr);
+console.log(combined);
 
 //code goes here
 
-
+console.log(combined.toString());
+secondHalfYr.pop();
+combined = firstQtr.concat(secondQtr).concat(secondHalfYr);
+console.log(combined);
+secondHalfYr.splice(0,2);
+secondHalfYr.pop();
+console.log(secondHalfYr);
 
 
 /*******************************************
@@ -90,8 +109,11 @@ var dec = 33.123456;
 			if no age then console.log "No answer"
 ********************************************/
 
+var age = 13
 
+age = 13 ? console.log("child") : age = 18 ? console.log("adult") : console.log("no answer");
 
+console.log(age);
 
 //code goes here
 
@@ -109,7 +131,15 @@ var dec = 33.123456;
 			- in the loop just console.log the values
 ********************************************/
 
+var arr = ["Superman", "Batman", "Wolverine", "Iceman"];
 
+for (i=0; i < arr.length; i++){
+    console.log(arr[i]);
+}
+
+for (i=0, j=arr.length; i<j; i++){
+    console.log(arr[i]);
+}
 
 //code goes here
 
@@ -138,3 +168,13 @@ var dec = 33.123456;
 
 //code goes here
 
+console.log(name.toLowerCase);
+console.log(name.toUpperCase);
+console.log(name.charAt(3));
+console.log(name.indexOf("nice"));
+console.log(name.substring(10,14));
+var array = [name];
+console.log(array);
+console.log(array.reverse);
+console.log(array.push("NEW VALUE"));
+console.log(array);
